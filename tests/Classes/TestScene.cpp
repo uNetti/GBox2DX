@@ -1,5 +1,4 @@
 #include "TestScene.h"
-#include "../../GBox2D/GBox2D.h"
 
 using namespace cocos2d;
 
@@ -16,11 +15,11 @@ CCScene *TestScene::scene()
     do 
     {
         // 'scene' is an autorelease object
-        scene = CCScene::node();
+        scene = CCScene::create();
         CC_BREAK_IF(! scene);
 
         // 'layer' is an autorelease object
-        TestScene *layer = TestScene::node();
+        TestScene *layer = TestScene::create();
         CC_BREAK_IF(! layer);
 
         // add layer as a child to scene
@@ -81,7 +80,7 @@ void TestScene::createWall()
 
 void TestScene::loadPVR(string name)
 {
-	_batchNode = CCSpriteBatchNode::batchNodeWithFile((name + ".pvr.ccz").c_str(), 150);
+	_batchNode = CCSpriteBatchNode::create((name + ".pvr.ccz").c_str(), 150);
 	addChild(_batchNode);
 	CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile((name + ".plist").c_str());
 }
@@ -93,7 +92,7 @@ void TestScene::loadPhysics(string name)
 
 CCSprite *TestScene::loadSprite(string name)
 {
-	return CCSprite::spriteWithSpriteFrameName((name+".png").c_str());
+	return CCSprite::createWithSpriteFrameName((name+".png").c_str());
 }
 
 GB2Node *TestScene::createNode(string name, cocos2d::CCSprite *node)
@@ -114,7 +113,7 @@ void TestScene::ccTouchesBegan(cocos2d::CCSet* touches, cocos2d::CCEvent* event)
 	{
 		CCTouch *touch = (CCTouch*)(*it);
 		
-		fireBullet(touch->locationInView().y);
+		fireBullet(touch->getLocationInView().y);
 	}
 
 }

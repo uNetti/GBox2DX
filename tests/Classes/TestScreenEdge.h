@@ -1,7 +1,7 @@
 #ifndef TESTSCREENEDGE_H
 #define TESTSCREENEDGE_H
 
-#include "../../GBox2D/GBox2D.h"
+#include "GBox2DX/GBox2D.h"
 
 class TestScene;
 

@@ -20,7 +20,7 @@ public:
     virtual void menuCloseCallback(CCObject* pSender);
 
     // implement the "static node()" method manually
-    LAYER_NODE_FUNC(HelloWorld);
+    CREATE_FUNC(HelloWorld);
 };
 
 #endif  // __HELLOWORLD_SCENE_H__

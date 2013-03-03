@@ -2,6 +2,7 @@
  MIT License
  
  Copyright (c) 2012 Chris Hannon / channon.us
+ Copyright (c) 2013 Lars Kinnunen / unetti.com
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +29,7 @@ NS_GB_BEGIN
 
 const char* gbox2dVersion()
 {
-	return "gbox2d-1.0";
+	return "gbox2d-1.1";
 }
 
 NS_GB_END

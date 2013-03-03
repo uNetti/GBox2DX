@@ -17,6 +17,7 @@
 //
 //  Copyright by Andreas Loew / http://www.codeandweb.com
 //  Copyright (c) 2012 Chris Hannon / channon.us
+//  Copyright (c) 2013 Lars Kinnunen / unetti.com
 //
 //  All rights reserved.
 //

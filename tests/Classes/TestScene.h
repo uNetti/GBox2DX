@@ -2,8 +2,8 @@
 #define TESTSCENE_H
 
 #include "cocos2d.h"
-#include "../../Box2D/Box2D.h"
-#include "../../GBox2D/GBox2D.h"
+#include "Box2D/Box2D.h"
+#include "GBox2DX/GBox2D.h"
 #include "TestScreenEdge.h"
 
 class TestScene : public cocos2d::CCLayer
@@ -31,7 +31,7 @@ public:
 
 	void setupWorld();
 
-	LAYER_NODE_FUNC(TestScene);
+	CREATE_FUNC(TestScene);
 
 	void loadPVR(string name);
 	void loadPhysics(string name);

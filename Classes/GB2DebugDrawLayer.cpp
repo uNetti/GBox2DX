@@ -1,7 +1,7 @@
 #include "GB2DebugDrawLayer.h"
 #include "GB2Engine.h"
 #include "GLES-Render.h"
-#include "Box2D.h"
+#include "Box2D/Box2D.h"
 #include "GB2Helper.h"
 
 using namespace cocos2d;

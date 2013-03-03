@@ -2,6 +2,7 @@
  MIT License
 
  Copyright (c) 2012 Chris Hannon / channon.us
+ Copyright (c) 2013 Lars Kinnunen / unetti.com
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +26,7 @@
 #define GB2COLLISION_H
 
 #include "GB2Config.h"
-#include "../../Box2D/Box2D.h"
+#include "Box2D/Box2D.h"
 #include "cocos2d.h"
 
 NS_GB_BEGIN

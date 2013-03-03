@@ -13,6 +13,7 @@
 //      http://www.code-and-web.de
 //
 //	Copyright (c) 2012 Chris Hannon / channon.us
+//  Copyright (c) 2013 Lars Kinnunen / unetti.com
 //  
 //  All rights reserved.
 //
@@ -36,7 +37,7 @@
 //
 
 #include "GB2ShapeCache.h"
-#include "Box2D.h"
+#include "Box2D/Box2D.h"
 #include "..\cocoa\CCNS.h"
 
 using namespace cocos2d;
@@ -121,7 +122,7 @@ cocos2d::CCPoint GB2ShapeCache::anchorPointForShape(const std::string &shape) {
 
 void GB2ShapeCache::addShapesWithFile(const std::string &plist) {
 
-	CCDictionary *dict = CCDictionary::dictionaryWithContentsOfFileThreadSafe(plist.c_str());
+	CCDictionary *dict = CCDictionary::createWithContentsOfFileThreadSafe(plist.c_str());
 	CCAssert(dict != NULL, "Shape-file not found"); // not triggered - cocos2dx delivers empty dict if non was found
     CCAssert(dict->count() != 0, "plist file empty or not existing");
 	

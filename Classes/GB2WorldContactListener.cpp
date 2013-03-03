@@ -7,6 +7,7 @@
  http://www.PhysicsEditor.de
 
  Copyright (c) 2012 Chris Hannon / channon.us
+ Copyright (c) 2013 Lars Kinnunen / unetti.com
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +28,6 @@
  THE SOFTWARE.
  */
 
-#include "Box2D.h"
 #include "GB2Collision.h"
 #include "GB2CollisionRegistry.h"
 #include "GB2WorldContactListener.h"
